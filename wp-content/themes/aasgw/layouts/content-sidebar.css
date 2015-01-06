@@ -5,18 +5,36 @@ Layout: Content-Sidebar
 
 .content-area {
 	float: left;
-	margin: 0 -25% 0 0;
+	margin-left: -380px;
+        padding-left: 380px;
 	width: 100%;
 }
 .site-main {
-	margin: 0 25% 0 0;
+	
 }
 .site-content .widget-area {
+        width: 300px;
 	float: right;
-	overflow: hidden;
-	width: 25%;
+	background: #303030;
+        padding: 2rem;
+        margin-right: 80px;
 }
 .site-footer {
 	clear: both;
 	width: 100%;
+}
+
+.entry-header,
+.entry-content,
+.entry-meta,
+.entry-footer,
+.tag-links,
+.post-navigation,
+.comments-area,
+.paging-navigation{
+    position: relative;
+    max-width: 780px;
+    max-width: 78rem;
+    padding: 0 4rem;
+    margin: 0 auto;
 }

@@ -102,9 +102,13 @@ add_action( 'widgets_init', 'aasgw_widgets_init' );
 function aasgw_scripts() {
 	wp_enqueue_style( 'aasgw-style', get_stylesheet_uri() );
         
+        wp_enqueue_style('aasgw-content-sidebar',get_template_directory_uri() . "/layouts/content-sidebar.css");
+        
         wp_enqueue_style('aasgw-fonts','http://fonts.googleapis.com/css?family=Droid+Sans|Arimo|Ubuntu|Muli|Gentium+Book+Basic');
 
         wp_enqueue_style('aasgw-font-awesome', 'http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css');
+        
+        
         
 	wp_enqueue_script( 'aasgw-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20120206', true );
 
