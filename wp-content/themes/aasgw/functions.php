@@ -9,7 +9,7 @@
  * Set the content width based on the theme's design and stylesheet.
  */
 if ( ! isset( $content_width ) ) {
-	$content_width = 640; /* pixels */
+	$content_width = 640; /* max width for things inside content */
 }
 
 if ( ! function_exists( 'aasgw_setup' ) ) :
@@ -46,7 +46,7 @@ function aasgw_setup() {
 	 *
 	 * @link http://codex.wordpress.org/Function_Reference/add_theme_support#Post_Thumbnails
 	 */
-	//add_theme_support( 'post-thumbnails' );
+	add_theme_support( 'post-thumbnails' );
 
 	// This theme uses wp_nav_menu() in one location.
 	register_nav_menus( array(
@@ -66,14 +66,14 @@ function aasgw_setup() {
 	 * See http://codex.wordpress.org/Post_Formats
 	 */
 	add_theme_support( 'post-formats', array(
-		'aside', 'image', 'video', 'quote', 'link',
+		'aside'
 	) );
 
 	// Set up the WordPress core custom background feature.
-	add_theme_support( 'custom-background', apply_filters( 'aasgw_custom_background_args', array(
-		'default-color' => 'ffffff',
-		'default-image' => '',
-	) ) );
+//	add_theme_support( 'custom-background', apply_filters( 'aasgw_custom_background_args', array(
+//		'default-color' => 'ffffff',
+//		'default-image' => '',
+//	) ) );
 }
 endif; // aasgw_setup
 add_action( 'after_setup_theme', 'aasgw_setup' );
@@ -101,6 +101,8 @@ add_action( 'widgets_init', 'aasgw_widgets_init' );
  */
 function aasgw_scripts() {
 	wp_enqueue_style( 'aasgw-style', get_stylesheet_uri() );
+        
+        wp_enqueue_style('aasgw-fonts','http://fonts.googleapis.com/css?family=Droid+Sans|Arimo|Ubuntu|Muli|Gentium+Book+Basic');
 
 	wp_enqueue_script( 'aasgw-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20120206', true );
 
@@ -115,7 +117,7 @@ add_action( 'wp_enqueue_scripts', 'aasgw_scripts' );
 /**
  * Implement the Custom Header feature.
  */
-//require get_template_directory() . '/inc/custom-header.php';
+require get_template_directory() . '/inc/custom-header.php';
 
 /**
  * Custom template tags for this theme.
