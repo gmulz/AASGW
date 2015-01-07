@@ -77,7 +77,8 @@ html {
 }
 
 body {
-	background: #e5f3ff; /* Fallback for when there is no custom background color defined. */
+	//background: #e5f3ff; /* Fallback for when there is no custom background color defined. */
+        background: #fff;
 }
 
 article,
@@ -319,7 +320,7 @@ HEADER
 
 .site-branding{
     padding: 1rem 4rem;
-    background: linear-gradient(to right,white,white,white, rgba(229,243,255,.75));
+    background: linear-gradient(to right,white,white, rgba(229,243,255,.75));
     overflow: hidden;
     max-height: 180px;
 }
@@ -471,7 +472,7 @@ a:active {
 	float: left;
 	width: 100%;
         position:relative;
-        font-family: 'Arimo', sans-serif;
+        font-family: 'Raleway', sans-serif;
         text-transform: uppercase;
         //background: #0072d6;
         background: linear-gradient(#ededed,#d0d0d0);
@@ -486,11 +487,17 @@ a:active {
 .main-navigation li {
 	float: left;
 	position: relative;
+        //border-left: 1px solid #c3c3c3;
+}
+
+.main-navigation li:first-child{
+    margin-left: 7em;
+    border: none;
 }
 
 .main-navigation a {
 	display: block;
-	padding: 1.3em 1em;
+	padding:  .7em .6em;
         font-size: 16px;
         text-decoration: none;
         line-height: 1.3em;
@@ -501,7 +508,7 @@ a:active {
 	box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
 	float: left;
 	position: absolute;
-	top: 3.8em;
+	top: 2.6em;
 	left: 0;
 	z-index: 99999;
         background: #ededed;
@@ -518,8 +525,8 @@ a:active {
 	width: 300px;
 }
 
-.main-navigation ul ul li {
-
+.main-navigation ul ul li:first-child {
+    margin-left: 0em;
 }
 
 .main-navigation li:hover > a {

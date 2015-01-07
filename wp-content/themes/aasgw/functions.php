@@ -104,7 +104,7 @@ function aasgw_scripts() {
         
         wp_enqueue_style('aasgw-content-sidebar',get_template_directory_uri() . "/layouts/content-sidebar.css");
         
-        wp_enqueue_style('aasgw-fonts','http://fonts.googleapis.com/css?family=Droid+Sans|Arimo|Ubuntu|Muli|Gentium+Book+Basic');
+        wp_enqueue_style('aasgw-fonts','http://fonts.googleapis.com/css?family=Droid+Sans|Arimo|Ubuntu|Muli|Gentium+Book+Basic|Arvo|Vollkorn|Neuton|Raleway');
 
         wp_enqueue_style('aasgw-font-awesome', 'http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css');
         
