@@ -3,12 +3,7 @@ Theme Name: AASGW
 Layout: Content-Sidebar
 */
 
-.content-area {
-	float: left;
-	margin-left: -380px;
-        padding-left: 380px;
-	width: 100%;
-}
+
 .site-main {
 	
 }
@@ -37,4 +32,24 @@ Layout: Content-Sidebar
     max-width: 78rem;
     padding: 0 4rem;
     margin: 0 auto;
+}
+
+
+@media screen and (min-width: 640px){
+    .content-area{
+        width: 100%;
+        float: left;
+        margin-left: -380px;
+        padding-left: 380px;
+    }
+    
+}
+
+@media screen and (max-width: 639px){
+    .site-content .widget-area{
+        width: auto;
+        max-width: 400px;
+        float: none;
+        margin: 1em auto 0;
+    }
 }

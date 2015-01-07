@@ -22,15 +22,25 @@
 	<a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', 'aasgw' ); ?></a>
 
 	<header id="masthead" class="site-header" role="banner">
+                <div id="masthead-bg">
+                        <img src ="/wp-content/themes/aasgw/images/paul.jpg"/>
+                </div>
 		<div class="site-branding">
-			<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-			<h2 class="site-description"><?php bloginfo( 'description' ); ?></h2>
+<!--			<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
+			<h2 class="site-description"><?php bloginfo( 'description' ); ?></h2>-->
+                    
+                    <div id="masthead-fg">
+                        <a href="/" id="logo">
+                            <img src="/wp-content/themes/aasgw/images/logo.png" alt="Allergy & Asthma Specialists of Greater Washington"/>
+                        </a>
+                    </div>
 		</div><!-- .site-branding -->
 
-		<nav id="site-navigation" class="main-navigation" role="navigation">
-			<button class="menu-toggle" aria-controls="menu" aria-expanded="false"><?php _e( 'Primary Menu', 'aasgw' ); ?></button>
-			<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
-		</nav><!-- #site-navigation -->
+		<!-- #site-navigation -->
 	</header><!-- #masthead -->
+        <nav id="site-navigation" class="main-navigation" role="navigation">
+            <button class="menu-toggle" aria-controls="menu" aria-expanded="false"><?php _e('Primary Menu', 'aasgw'); ?></button>
+            <?php wp_nav_menu(array('theme_location' => 'primary')); ?>
+        </nav>
 
 	<div id="content" class="site-content">

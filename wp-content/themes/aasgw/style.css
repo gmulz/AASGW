@@ -305,6 +305,47 @@ th {
 	font-weight: bold;
 }
 
+
+
+/*-------------------------------------------------------------
+
+HEADER
+
+--------------------------------------------------------------*/
+.site-header{
+    overflow:hidden;
+    position:relative;
+}
+
+.site-branding{
+    padding: 1rem 4rem;
+    background: linear-gradient(to right,white,white,white, rgba(229,243,255,.75));
+    overflow: hidden;
+    max-height: 180px;
+}
+
+#masthead-bg{
+    z-index: -1000;
+    float:right;
+    position:absolute;
+    top: -200px;
+    right:0px;
+}
+
+#masthead-bg img{
+    height: 600px;
+    width:auto;
+    float:right
+    
+}
+
+#logo{
+    float: left;
+}
+
+#logo img{
+    width: 400px;
+}
 /*--------------------------------------------------------------
 4.0 Forms
 --------------------------------------------------------------*/
