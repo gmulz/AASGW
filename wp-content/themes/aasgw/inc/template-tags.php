@@ -260,3 +260,21 @@ function aasgw_category_transient_flusher() {
 }
 add_action( 'edit_category', 'aasgw_category_transient_flusher' );
 add_action( 'save_post',     'aasgw_category_transient_flusher' );
+
+
+
+
+function book_appointment_menu() {
+    if (has_nav_menu('book')) {
+        wp_nav_menu(
+                array(
+                    'theme_location' => 'book',
+                    'container' => 'div',
+                    'container_id' => 'menu-book',
+                    'container_class' => 'menu-book-items',
+                    'menu_class' => 'menu-items',
+                    'depth' => 1,
+                    'fallback_cb' => '',
+        ));
+    }
+}
