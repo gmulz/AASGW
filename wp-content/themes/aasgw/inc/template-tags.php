@@ -268,13 +268,14 @@ function book_appointment_menu() {
     if (has_nav_menu('book')) {
         wp_nav_menu(
                 array(
-                    'theme_location' => 'book',
-                    'container' => 'div',
-                    'container_id' => 'menu-book',
-                    'container_class' => 'menu-book-items',
-                    'menu_class' => 'menu-items',
-                    'depth' => 1,
-                    'fallback_cb' => '',
+                    'theme_location'    => 'book',
+                    'container'         => 'div',
+                    'container_id'      => 'menu-book',
+                    'container_class'   => 'menu-book',
+                    'menu_id'           => 'menu-book-items',
+                    'menu_class'        => 'menu-items',
+                    'depth'             => 1,
+                    'fallback_cb'       => '',
         ));
     }
 }

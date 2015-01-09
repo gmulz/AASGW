@@ -580,6 +580,28 @@ a:active {
 	display: none;
 }
 
+.menu-book ul{
+    float: right;
+    text-align: center;
+    list-style: none;
+    margin-right: 80px;
+}
+
+.menu-book ul li{
+    position: relative;
+    display: inline-block;
+}
+
+.menu-book li a{
+    display: inline-block;
+    padding: .3em;
+    font-size: 20px;
+    vertical-align: top;
+    background: #ffca72;
+    color: #444;
+}
+
+
 @media screen and (max-width: 600px) {
         .menu-toggle{
             display:block;
