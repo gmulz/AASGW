@@ -590,6 +590,7 @@ a:active {
 .menu-book ul li{
     position: relative;
     display: inline-block;
+    height: 100%;
 }
 
 .menu-book li a{
