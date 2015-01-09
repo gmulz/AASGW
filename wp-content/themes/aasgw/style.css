@@ -506,14 +506,14 @@ a:active {
         text-decoration: none;
         line-height: 1.3em;
         //color: #00498a;
-        color: #efefef;
+        color: #ffffff;
 }
 
 .main-navigation ul ul {
 	box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
 	float: left;
 	position: absolute;
-	top: 2.6em;
+	top: 2.4em;
 	left: 0;
 	z-index: 99999;
         background: #ededed;
@@ -528,6 +528,7 @@ a:active {
 
 .main-navigation ul ul a {
 	width: 300px;
+        color:#00498a;
 }
 
 .main-navigation ul ul li:first-child {
@@ -558,19 +559,19 @@ a:active {
 .main-navigation .current-menu-item > a,
 .main-navigation .current_page-item > a:hover,
 .main-navigation .current_menu-item > a:hover{
-    background: #21759b;
-    color: #e0e0e0;
+    background: #7aaff6 !important;
+    color: #fff !important;
 }
 
-.main-navigation .current_page_ancestor{
-    background: linear-gradient(#d0d0d0,#c0c0c0);
-    color: #e0e0e0;
+.main-navigation .current_page_ancestor > a{
+    background: #7aaff6 !important;
+    color: #fff !important;
 }
 
 .main-navigation ul ul .current_page_parent,
 .main-navigation .current_page_parent .current_page_item > a{
-    background: #21759b;
-    color: #e0e0e0;
+    background: #7aaff6 !important;
+    color: #fff !important;
 }
 
 /* Small menu */
