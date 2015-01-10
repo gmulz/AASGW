@@ -475,7 +475,7 @@ a:active {
 	width: 100%;
         position:relative;
         font-family: 'Raleway', sans-serif;
-        text-transform: uppercase;
+        //text-transform: uppercase;
         //background: #0072d6;
         //background: linear-gradient(#ededed,#d0d0d0);
         background: linear-gradient(#659cdf,#6a9fe6,#659cdf);
@@ -494,7 +494,7 @@ a:active {
 }
 
 .main-navigation li:first-child{
-    margin-left: 7em;
+    margin-left: 5%;
     border: none;
 }
 
@@ -591,6 +591,7 @@ a:active {
     position: relative;
     display: inline-block;
     height: 100%;
+    margin-left: 0 !important;
 }
 
 .menu-book li a{
