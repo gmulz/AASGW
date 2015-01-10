@@ -151,23 +151,22 @@ button,
 input,
 select,
 textarea {
-	color: #404040;
-	font-family: 'Arimo', sans-serif;
-	font-size: 16px;
-	font-size: 1.6rem;
-	line-height: 1.5;
+    font-size: 16px;
+    font-size: 1.6rem;
+    font-family: 'PT Serif', serif;
+    line-height: 1.5;
+    color: #404040;
+    color: hsl(0, 0%, 25%);
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-        font-weight: 900;
-        font-family: 'Gentium Book Basic', serif;
-	clear: left;
-        word-break: keep-all;
+h1, h2, h3, h4, h5, h6 {
+    clear: right;
+    font-weight: 900;
+    font-family: 'Lato', sans-serif;
+    color: #000;
+    color: hsl(0, 0%, 0%);
+    -ms-word-break: break-word;
+    word-break: break-word;
 }
 
 p {
@@ -187,7 +186,7 @@ i {
 }
 
 blockquote {
-	margin: 0 1.5em;
+//	margin: 0 1.5em;
 }
 
 address {
@@ -365,24 +364,27 @@ button,
 input[type="button"],
 input[type="reset"],
 input[type="submit"] {
-	border: 1px solid;
-	border-radius: 3px;
-        background: linear-gradient(#659cdf,#6a9fe6,#659cdf);
-	color: #fff;
-	cursor: pointer; /* Improves usability and consistency of cursor style between image-type 'input' and others */
-	-webkit-appearance: button; /* Corrects inability to style clickable 'input' types in iOS */
-	font-size: 16px;
-	font-size: 1.6rem;
-	padding: 1em 2em;
+    padding: 1em 2em;
+    font-size: 16px;
+    font-size: 1.6rem;
+    font-family: 'Lato';
+    text-transform: uppercase;
+    line-height: 1;
+    color: hsl(0, 0%, 100%);
+    background: #3c3c3c;
+    background: hsl(0, 0%, 24%);
+    border: none;
+    border-radius: 3px;
+    cursor: pointer; /* Improves usability and consistency of cursor style between image-type 'input' and others */
+    -webkit-appearance: button; /* Corrects inability to style clickable 'input' types in iOS */
 }
-
 button:hover,
 input[type="button"]:hover,
 input[type="reset"]:hover,
 input[type="submit"]:hover {
-    background: #7aaff6;
+    background: #000;
+    background: hsl(0, 0%, 0%);
 }
-
 button:focus,
 input[type="button"]:focus,
 input[type="reset"]:focus,
@@ -391,7 +393,8 @@ button:active,
 input[type="button"]:active,
 input[type="reset"]:active,
 input[type="submit"]:active {
-    background: #6a9fe6;
+    background: #000;
+    background: hsl(0, 0%, 0%);
 }
 
 input[type="checkbox"],
@@ -414,10 +417,10 @@ input[type="url"],
 input[type="password"],
 input[type="search"],
 textarea {
-	color: #333;
-	border: 1px solid #ccc;
-	font-family: Arimo;
-        padding: 8px;
+    padding: 8px;
+    font-family: 'Lato', sans-serif;
+    color: #333;
+    border: 1px solid #ccc;
 }
 
 input[type="text"]:focus,
@@ -451,18 +454,20 @@ textarea {
 5.1 Links
 --------------------------------------------------------------*/
 a {
-	text-decoration: none;
-        color: #445;
+    text-decoration: none;	
+    color: #000;
+    color: hsl(0, 0%, 0%);    
 }
 
 a:visited {
-	color: purple;
+    color: #333;
+    color: hsl(0, 0%, 20%);
 }
 
 a:hover,
 a:focus,
-a:active {
-	text-decoration: underline;
+a:active { 
+    text-decoration: underline; 
 }
 
 /*--------------------------------------------------------------
@@ -762,6 +767,19 @@ a:active {
 	margin: 0 auto;
 }
 
+/* Alignment responsive */
+@media screen and (min-width: 1320px) {
+    .alignleft {
+        margin-left: -100px; 
+    }
+}
+
+@media screen and (min-width: 1820px) {
+    .alignright { 
+        margin-right: -160px; 
+    }
+}
+
 /*--------------------------------------------------------------
 8.0 Clearings
 --------------------------------------------------------------*/
@@ -798,8 +816,8 @@ a:active {
     font-family: 'Lato', sans-serif;
     font-size: 16px;
     font-size: 1.6rem;
-    color: #fff;
-    color: hsl(0, 0%, 100%);
+    color: #7a7a7a;
+    color: hsl(0, 0%, 47.1%);
 }
 
 .widget-title {
@@ -807,14 +825,14 @@ a:active {
     font-size: 24px;
     font-size: 2.4rem;
     border-bottom: 2px solid #fff;
-    color: #fff;
-    color: hsl(0, 0%, 100%);
+    color: #7a7a7a;
+    color: hsl(0, 0%, 47.1%);
 }
 
 .widget a {
     font-weight: 700;
-    color: #fff;
-    color: hsl(0, 0%, 100%);
+    color: #7a7a7a;
+    color: hsl(0, 0%, 47.1%);
 }
 
 .widget ul,
@@ -915,6 +933,177 @@ a:active {
 /*--------------------------------------------------------------
 10.1 Posts and pages
 --------------------------------------------------------------*/
+
+/* Typography */
+.entry-title {
+    margin: 0 0 2rem;
+    font-family: 'Lato', sans-serif;
+    font-weight: 900;
+    font-size: 40px;
+    font-size: 4rem;
+    line-height: 1.3em;
+    color: #000;
+    color: hsl(0, 0%, 0%);
+}
+
+.entry-content a { 
+    text-decoration: underline; 
+}
+                    
+.entry-content h1,
+.entry-content h2,
+.entry-content h3,
+.entry-content h4,
+.entry-content h5,
+.entry-content h6 { margin-bottom: .4em; }
+
+.entry-content h1 {
+    font-size: 32px;
+    font-size: 3.2rem;
+}
+
+.entry-content h2 {
+    font-size: 30px;
+    font-size: 3.0rem;
+}
+
+.entry-content h3 {
+    font-size: 28px;
+    font-size: 2.8rem;
+}
+
+.entry-content h4 {
+    font-size: 26px;
+    font-size: 2.6rem;
+}
+
+.entry-content h5 {
+    font-size: 24px;
+    font-size: 2.4rem;
+}
+
+.entry-content h6 {
+    font-size: 22px;
+    font-size: 2.2rem;
+}
+
+.entry-content p,
+.entry-content ul,
+.entry-content ol {
+    font-size: 20px;
+    font-size: 2rem;
+    line-height: 1.6em;
+}
+
+.entry-content blockquote p {
+    font-size: 28px;
+    font-size: 2.8rem;
+    line-height: 1.5em;
+}
+
+/* Smaller fonts for smaller screens */
+@media screen and (max-width: 680px) {
+    .entry-title {
+        font-size: 32px;
+        font-size: 3.2rem;
+        line-height: 1.3em;
+    }
+    .entry-content h1 {
+        font-size: 28px;
+        font-size: 2.8rem;
+    }
+
+    .entry-content h2 {
+        font-size: 26px;
+        font-size: 2.6rem;
+    }
+
+    .entry-content h3 {
+        font-size: 24px;
+        font-size: 2.4rem;
+    }
+
+    .entry-content h4 {
+        font-size: 22px;
+        font-size: 2.2rem;
+    }
+
+    .entry-content h5 {
+        font-size: 20px;
+        font-size: 2rem;
+    }
+
+    .entry-content h6 {
+        font-size: 18px;
+        font-size: 1.8rem;
+    }
+
+    .entry-content p,
+    .entry-content ul,
+    .entry-content ol  {
+        font-size: 18px;
+        font-size: 1.8rem;
+    }
+    
+    .entry-content blockquote p {
+        font-size: 22px;
+        font-size: 2.2rem;
+        line-height: 1.5em;
+    }
+}
+
+/* Meta */
+.category-list {
+    margin: 1.3em 0 1em;
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    font-size: 1.6rem;
+}
+
+.category-list a {
+    color: #333;
+    color: hsl(0, 0%, 10%);
+}
+
+.category-list a:hover {
+    color: #000;
+    color: hsl(0, 0%, 0%);
+}
+
+.entry-meta {
+    margin-bottom: 2rem;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+    font-size: 14px;
+    font-size: 1.4rem;
+}
+
+.entry-meta a { font-weight: 600; }
+
+.entry-footer {
+    margin-top: 3rem;
+    margin-bottom: 5rem;
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    font-size: 1.6rem;
+    line-height: 2em;
+}
+
+.entry-footer ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+.entry-footer li {
+    display: inline-block;
+    margin-right: 4rem;
+}
+
+.entry-footer a {
+    margin-left: .5rem;
+}
+
 .sticky {
 	display: block;
 }
@@ -942,6 +1131,84 @@ a:active {
 .page-links {
 	clear: both;
 	margin: 0 0 1.5em;
+}
+
+@media screen and (min-width: 1320px){
+    .single .entry-meta {
+        width: 120px;
+        margin-left: -140px;
+        float: left;
+        text-align: right;
+    }
+    
+    .single .byline,
+    .single .posted-on {
+        display: block;
+        margin-bottom: 1em;
+    }
+}
+
+@media screen and (max-width: 1319px){
+    .posted-on:before {
+        content: ' on ';
+    }
+    .posted-on:after {
+        content: '.';
+    }
+}
+
+/* Blockquotes */
+blockquote {
+    padding: 1em 1.5em 0;
+    margin-bottom: 1em;
+    font-style: italic;
+    border-top: solid 1px hsl(0, 0%, 80%);
+    border-bottom: solid 1px hsl(0, 0%, 80%);
+}
+
+blockquote em { 
+    font-style: normal; 
+}
+
+blockquote cite {
+    display: block;
+    margin-top: 1em;
+    margin-left: 40%;
+    font-size: 18px;
+    font-size: 1.8rem;
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    line-height: 1.5em;
+    text-align: right;
+}
+
+blockquote.alignleft {
+    width: 50%;
+    float: left;
+    padding: 1em 0 0;
+    margin-right: 2em;
+}
+
+blockquote.alignright {
+    width: 50%;
+    float: right;
+    padding: 1em 0 0;
+    margin-left: 2em;
+}
+
+/* Blockquotes responsive */
+/* Optional rules that set blockquotes to full width on smaller screens */
+@media screen and (max-width: 780px) {
+    blockquote.alignleft,
+    blockquote.alignright { width: 40%; }
+}
+
+@media screen and (max-width:600px) {
+    blockquote.alignleft,
+    blockquote.alignright {
+        width: 100%;
+        padding: 1em 1.5em 0;   
+    }
 }
 
 /*--------------------------------------------------------------

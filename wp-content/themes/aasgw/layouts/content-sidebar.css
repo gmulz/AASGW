@@ -7,6 +7,18 @@ Layout: Content-Sidebar
 .site-main {
 	
 }
+
+.site-content {
+    padding-bottom: 4em;
+    background: #b2b2b2;
+}
+
+.single .site-content,
+.page .site-content {
+    background: #fff;
+    background: hsl(0, 0%, 100%);
+}
+
 .site-content .widget-area {
         width: 300px;
 	float: right;
@@ -21,7 +33,6 @@ Layout: Content-Sidebar
 
 .entry-header,
 .entry-content,
-.entry-meta,
 .entry-footer,
 .tag-links,
 .post-navigation,
