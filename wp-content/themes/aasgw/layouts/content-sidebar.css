@@ -10,13 +10,15 @@ Layout: Content-Sidebar
 
 .site-content {
     padding-bottom: 4em;
-    background: #b2b2b2;
+    background: #fff;
+    
 }
 
 .single .site-content,
 .page .site-content {
     background: #fff;
     background: hsl(0, 0%, 100%);
+    
 }
 
 .site-content .widget-area {
@@ -43,6 +45,7 @@ Layout: Content-Sidebar
     max-width: 78rem;
     padding: 0 4rem;
     margin: 0 auto;
+    padding-top: 2em;
 }
 
 

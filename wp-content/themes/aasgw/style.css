@@ -82,7 +82,7 @@ body {
         background: #fff;
 }
 
-article,
+article,b
 aside,
 details,
 figcaption,
@@ -484,12 +484,13 @@ a:active {
         //background: #0072d6;
         //background: linear-gradient(#ededed,#d0d0d0);
         background: linear-gradient(#659cdf,#6a9fe6,#659cdf);
+        
 }
 
 .main-navigation ul {
 	list-style: none;
 	margin: 0;
-	padding-left: 0;
+	padding-left: 5%;
 }
 
 .main-navigation li {
@@ -499,14 +500,13 @@ a:active {
 }
 
 .main-navigation li:first-child{
-    margin-left: 5%;
     border: none;
 }
 
 .main-navigation a {
 	display: block;
 	padding:  .7em .6em;
-        font-size: 14.5px;
+        font-size: 16px;
         font-weight: 400;
         text-decoration: none;
         line-height: 1.3em;
