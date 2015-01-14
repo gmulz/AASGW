@@ -34,6 +34,24 @@
                             <img src="/wp-content/themes/aasgw/images/logo.png" alt="Allergy & Asthma Specialists of Greater Washington"/>
                         </a>
                     </div>
+                    
+                    <div id="locations-top">
+                        
+                        <span style="border-bottom: 1px solid black; white-space:pre;">    Locations    </span>
+                        <div>
+                            <div class="locations-list">
+                                <a href="/"> Culpeper</a><br>
+                                <a href="/"> Fairfax</a><br>
+                                <a href="/"> Front Royal</a>
+                            </div>
+                            <div class="locations-list">
+                                <a href="/"> Gainesville</a><br>
+                                <a href="/"> Tysons Corner</a><br>
+                                <a href="/"> Warrenton</a>
+                            </div>
+                        </div>
+                    </div>
+                    
 		</div><!-- .site-branding -->
 
 		<!-- #site-navigation -->

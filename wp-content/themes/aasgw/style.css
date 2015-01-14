@@ -330,14 +330,16 @@ HEADER
     z-index: -1000;
     float:right;
     position:absolute;
-    top: -200px;
-    right:0px;
+    max-height:180px;
+    right:0;
 }
 
 #masthead-bg img{
-    height: 600px;
-    width:auto;
-    float:right
+    max-height: 180px;
+    max-width: 100%;
+    float:right;
+    
+    display:block
     
 }
 
@@ -347,6 +349,20 @@ HEADER
 
 #logo img{
     width: 400px;
+}
+
+
+#locations-top{
+    float:right;
+    right:40px;
+    width: 200px;
+    text-align: center;
+    font-family: 'Lato', sans-serif
+}
+
+.locations-list{
+    float:left;
+    margin: 4px;
 }
 /*--------------------------------------------------------------
 4.0 Forms
@@ -484,6 +500,8 @@ a:active {
         //background: #0072d6;
         //background: linear-gradient(#ededed,#d0d0d0);
         background: linear-gradient(#659cdf,#6a9fe6,#659cdf);
+        display:inline-block;
+        overflow:hidden;
         
 }
 
@@ -585,27 +603,37 @@ a:active {
 	display: none;
 }
 
+.menu-book{
+    height:100%;
+    position: absolute;
+    display:inline-block;
+    margin-left: 0 !important;
+    right: 80px;
+}
+
 .menu-book ul{
     float: right;
     text-align: center;
     list-style: none;
-    margin-right: 80px;
+    height:100%;
+    padding:0;
+    
 }
 
 .menu-book ul li{
     position: relative;
     display: inline-block;
     height: 100%;
-    margin-left: 0 !important;
+    
+    width: 220px;
 }
 
 .menu-book li a{
     display: inline-block;
-    padding: .3em;
     font-size: 20px;
-    vertical-align: top;
     background: #ffca72;
     color: #444;
+    padding: 9px 12px;
 }
 
 
