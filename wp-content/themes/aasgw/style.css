@@ -501,7 +501,6 @@ a:active {
         //background: linear-gradient(#ededed,#d0d0d0);
         background: linear-gradient(#659cdf,#6a9fe6,#659cdf);
         display:inline-block;
-        overflow:hidden;
         
 }
 
@@ -604,6 +603,7 @@ a:active {
 }
 
 .menu-book{
+    clear:left;
     height:100%;
     position: absolute;
     display:inline-block;
@@ -613,6 +613,7 @@ a:active {
 
 .menu-book ul{
     float: right;
+    
     text-align: center;
     list-style: none;
     height:100%;
