@@ -35,6 +35,7 @@ and Blueprint http://www.blueprintcss.org/
 	10.1 Posts and pages
 	10.2 Asides
 	10.3 Comments
+        10.4 Index and Archive
 11.0 Infinite scroll
 12.0 Media
 	12.1 Captions
@@ -741,6 +742,31 @@ a:active {
 	width: 50%;
 }
 
+
+.paging-navigation ul {
+    margin: 0;
+}
+
+.paging-navigation li { display: inline; }
+
+a.page-numbers,
+span.page-numbers {
+     padding: .3em .7em;
+     color: #333;
+     color: hsl(0, 0%, 20%);
+}
+
+a:hover.page-numbers {
+    color: #000;
+    color: hsl(0, 0%, 0%);
+}
+
+.paging-navigation .current {
+    font-weight: bold;
+    color: #000;
+    color: hsl(0, 0%, 0%);
+}
+
 /*--------------------------------------------------------------
 6.0 Accessibility
 --------------------------------------------------------------*/
@@ -1177,12 +1203,17 @@ a:active {
     }
 }
 
-@media screen and (max-width: 1319px){
-    .posted-on:before {
-        content: ' on ';
-    }
-    .posted-on:after {
-        content: '.';
+.posted-on:before {
+    content: ' on ';
+}
+.posted-on:after {
+    content: '.';
+}
+
+@media screen and (min-width: 1320px) {
+    .single .posted-on:before,
+    .single .posted-on:after {
+        content: '';
     }
 }
 
@@ -1243,9 +1274,8 @@ blockquote.alignright {
 /*--------------------------------------------------------------
 10.2 Asides
 --------------------------------------------------------------*/
-.blog .format-aside .entry-title,
-.archive .format-aside .entry-title {
-	display: none;
+.format-aside .entry-content {
+    margin-top: 1em;
 }
 
 /*--------------------------------------------------------------
@@ -1258,6 +1288,35 @@ blockquote.alignright {
 .bypostauthor {
 	display: block;
 }
+
+
+/*--------------------------------------------------------------
+10.4 Index and Archive
+--------------------------------------------------------------*/
+
+.taxonomy-description {
+    padding-top: 2rem;
+    margin: 2rem 0;
+    font-family: 'Lato', sans-serif;
+    font-style: italic;
+    border-top: 1px solid hsl(0, 0%, 75%);
+    border-bottom: 1px solid hsl(0, 0%, 75%);
+}
+
+.continue-reading {
+    margin: 0 4rem;
+    font-weight: 900;
+    font-size: 18px;
+    font-size: 1.8rem;
+}
+
+.continue-reading i { margin-left: .5em; }
+
+.sticky-post {
+    position: absolute;
+    top: 1rem;
+    right: 3rem;
+}                
 
 /*--------------------------------------------------------------
 11.0 Infinite scroll
@@ -1361,6 +1420,15 @@ object {
 
 .gallery-caption {
 	display: block;
+}
+
+
+
+
+
+.small-index-thumbnail { 
+    margin-top: -1em;
+    margin-bottom: 1em;
 }
 
 /*--------------------------------------------------------------
